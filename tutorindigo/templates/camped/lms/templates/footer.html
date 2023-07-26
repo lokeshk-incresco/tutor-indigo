@@ -1,4 +1,4 @@
-<!-- ## mako
+## mako
 <%page expression_filter="h"/>
 <%!
   from django.urls import reverse
@@ -13,7 +13,7 @@
 % if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-9">
           {% if INDIGO_FOOTER_NAV_LINKS %}
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
@@ -67,7 +67,7 @@
             </div>
           % endif
         </div>
-      </div>
+      </div> -->
     </footer>
   </div>
 % else:
@@ -80,7 +80,7 @@
         dir=${bidi}
       % endif
     >
-      <div class="colophon">
+      <!-- <div class="colophon">
         {% if INDIGO_FOOTER_NAV_LINKS %}
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
@@ -148,7 +148,7 @@
             <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="140" />
           </a>
         </p>
-      </div>
+      </div> -->
       % endif
     </footer>
   </div>
@@ -163,4 +163,4 @@
   % for url in footer_css_urls:
     <link rel="stylesheet" type="text/css" href="${url}"></link>
   % endfor
-% endif -->
+% endif
