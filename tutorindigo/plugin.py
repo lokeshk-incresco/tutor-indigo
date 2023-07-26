@@ -33,18 +33,18 @@ config = {
 
 # Theme templates
 hooks.Filters.ENV_TEMPLATE_ROOTS.add_item(
-    pkg_resources.resource_filename("camped", "templates")
+    pkg_resources.resource_filename("tutorindigo", "templates")
 )
 # This is where the theme is rendered in the openedx build directory
 hooks.Filters.ENV_TEMPLATE_TARGETS.add_items(
     [
-        ("camped", "build/openedx/themes"),
+        ("indigo", "build/openedx/themes"),
     ],
 )
 
 # Force the rendering of scss files, even though they are included in a "partials" directory
 hooks.Filters.ENV_PATTERNS_INCLUDE.add_item(
-    r"camped/lms/static/sass/partials/lms/theme/"
+    r"indigo/lms/static/sass/partials/lms/theme/"
 )
 
 # Load all configuration entries
