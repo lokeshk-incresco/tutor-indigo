@@ -13,7 +13,7 @@ def load_readme():
 def load_about():
     about = {}
     with io.open(
-        os.path.join(HERE, "tutorindigo", "__about__.py"),
+        os.path.join(HERE, "camped", "__about__.py"),
         "rt",
         encoding="utf-8",
     ) as f:
@@ -45,7 +45,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.8",
     install_requires=["tutor>=16.0.0,<17.0.0"],
-    entry_points={"tutor.plugin.v1": ["camped = tutorindigo.plugin"]},
+    entry_points={"tutor.plugin.v1": ["camped = camped.plugin"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
