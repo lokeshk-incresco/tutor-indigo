@@ -1,9 +1,9 @@
 variables:
-    TUTOR_PLUGIN: indigo
-    TUTOR_PYPI_PACKAGE: tutor-indigo
+    TUTOR_PLUGIN: camped
+    TUTOR_PYPI_PACKAGE: camped
     TUTOR_BUILD_IMAGE: openedx
     OPENEDX_RELEASE: palm
-    GITHUB_REPO: overhangio/tutor-indigo
+    GITHUB_REPO: lokeshk-incresco/tutor-indigo
 
 include:
   - project: 'community/tutor-ci'
